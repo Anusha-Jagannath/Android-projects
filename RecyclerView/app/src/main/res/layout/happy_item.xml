@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/myImg"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/myTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Hello my world, welcome to the"
+            app:layout_constraintStart_toEndOf="@id/myImg"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="8dp"
+            />
+        <TextView
+            android:id="@+id/mysubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello all where are you"
+            app:layout_constraintStart_toEndOf="@id/myImg"
+            app:layout_constraintTop_toBottomOf="@id/myTitle"
+            app:layout_constraintEnd_toEndOf="@id/myTitle"
+            android:layout_margin="4dp"
+            />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4.5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            app:layout_constraintStart_toEndOf="@id/myImg"
+            app:layout_constraintTop_toBottomOf="@id/mysubtitle"
+            android:layout_margin="8dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

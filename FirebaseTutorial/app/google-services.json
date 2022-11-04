@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1023415537241",
+    "project_id": "get-and-set-data-employe-9b957",
+    "storage_bucket": "get-and-set-data-employe-9b957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023415537241:android:311c8a994a921ed5dc2b48",
+        "android_client_info": {
+          "package_name": "com.example.firebasetutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023415537241-3nmp3ugkl0hrfgh3cl2oe4a54nrav6ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASoPwE-b-seNhJ6TEcXjjEEv4-5QFCrT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023415537241-3nmp3ugkl0hrfgh3cl2oe4a54nrav6ml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

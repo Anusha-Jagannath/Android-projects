@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Widget.WidgetExample.AppWidget.Container"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:theme="@style/Theme.WidgetExample.AppWidgetContainer">
+
+   <TextView
+       android:id="@+id/tv_widget"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="My widget"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       />
+
+   <Button
+       android:id="@+id/exampleBtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="press me" />
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ListView
+          android:id="@+id/example_widget_stack_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:loopViews="true"
+          />
+
+      <TextView
+          android:id="@+id/example_widget_empty_view"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="EMPTY"
+          android:background="@android:color/darker_gray"
+          android:gravity="center"
+          android:textColor="@android:color/white"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          />
+
+   </FrameLayout>
+
+
+</LinearLayout>

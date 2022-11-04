@@ -1,0 +1,35 @@
+package com.example.peoplecounter.view
+
+interface WireRequestDomesticView {
+
+    fun isInternetConnected(): Boolean
+    fun onStartShimmer()
+    fun onStopShimmer()
+    fun onNetworkError()
+    fun showConnectionIssueDialog()
+    fun showError()
+    fun hideError()
+    fun showProgress()
+    fun hideProgress()
+    fun enableAmountCard()
+    fun enableRecipientCard()
+    fun onEnableReviewButton()
+    fun onDisableReviewButton()
+    fun onWireAccountSelect(accountName: String?, accountType: String?, accountBalance: String?)
+    //fun onWireAccounts(accounts: List<WireAccount>)
+    //fun onWireRecipientInfo(infoView: WireTransferRecipientInfo)
+    fun disableAccountCard()
+    fun onNoAccountFound()
+    fun updateDate(date: String, isEnableView: Boolean)
+    fun updateAmount(amount: String)
+    fun onAmountBalanceError(message: Int)
+    fun showApiFailureDialog(errorMessage: String)
+    fun showUnrecoverableErrorDialog(title: String, errorMessage: String)
+    fun showResubmitWireRequestDialog(title: String, errorMessage: String)
+    fun showCancelRequestWireTransfer()
+    fun onAccountUsageLimitReached(errorMessageId: Int)
+    fun showPurposeOfWiresFieldError(stringId: Int)
+    fun removePurposeOfWiresFieldError()
+    fun enableCounterForPurposeOfWire()
+    fun showWiresToolTip()
+}

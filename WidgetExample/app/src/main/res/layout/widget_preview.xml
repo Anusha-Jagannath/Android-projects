@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_widget_background"
+    android:orientation="vertical">
+
+    // Include the actual widget layout that contains ListView.
+    <include
+        layout="@layout/example_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    // The amount of fake items you include depends on the values you provide
+    // for minHeight or targetCellHeight in the AppWidgetProviderInfo definition.
+
+    <TextView android:text="fake_item1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp" />
+
+    <TextView android:text="fake_item2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp" />
+
+</LinearLayout>

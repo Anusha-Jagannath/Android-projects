@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wire_screen_root_background"
+    android:orientation="vertical"
+    android:theme="@style/WireMaterialTheme">
+
+    <include
+        android:id="@+id/toolbar_recipient_info"
+        layout="@layout/toolbar_frb" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_wire_recipient_info_continue"
+        android:layout_below="@+id/toolbar_recipient_info"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/wire_white"
+                android:layout_marginBottom="@dimen/wire_recipient_info_form_bottom_margin"
+                android:elevation="@dimen/wire_elevation"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/wire_bottom_button_margin">
+
+                <TextView
+                    android:id="@+id/txt_learn_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_arrow_green"
+                    android:drawablePadding="@dimen/learn_more_darwable_padding"
+                    style="@style/WireRecipientInfoDescriptionStyle"
+                    android:layout_margin="@dimen/l_vertical_spacing"
+                    android:background="@drawable/bg_wire_add_recipient_learn_more" />
+
+                <com.firstrepublic.banking.features.wire.ui.custom.WireEditText
+                    android:id="@+id/et_wire_recipient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/wire_form_element_margin"
+                    app:et_hint="@string/wire_recipient_info_form_hint_name"
+                    app:et_inputType="textPersonName"
+                    app:et_max_length="@integer/wire_recipient_name_max_length" />
+
+                <com.firstrepublic.banking.features.wire.ui.custom.WireEditText
+                    android:id="@+id/et_wire_recipient_wire_routing_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/wire_form_element_margin"
+                    android:digits="@string/wire_recipient_info_form_routing_number_acceptable_digits"
+                    app:et_example="@string/wire_recipient_info_form_example_wire_routing_number"
+                    app:et_hint="@string/wire_recipient_info_form_hint_wire_routing_number"
+                    app:et_inputType="number"
+                    app:et_max_length="@integer/wire_routing_number_max_length" />
+
+                <com.firstrepublic.banking.features.wire.ui.custom.WireEditText
+                    android:id="@+id/et_wire_recipient_financial_institute_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_margin="@dimen/wire_form_element_margin"
+                    app:et_hint="@string/wire_recipient_info_form_hint_financial_institute_name"
+                    app:et_inputType="textPersonName"
+                    app:et_example="@string/wire_recipient_fi_name_example_msg"
+                    app:et_max_length="@integer/wire_recipient_financial_institution_max_length" />
+
+                <TextView
+                    style="@style/WireTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/wire_form_element_margin"
+                    android:layout_marginTop="@dimen/wire_form_element_margin"
+                    android:layout_marginRight="@dimen/wire_form_element_margin"
+                    android:layout_marginBottom="@dimen/wire_recipient_info_form_display_message_bottom_margin"
+                    android:text="@string/wire_recipient_info_form_account_number_caution" />
+
+
+                <com.firstrepublic.banking.features.wire.ui.custom.WireEditText
+                    android:id="@+id/et_wire_recipient_account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/wire_form_element_margin"
+                    app:et_hint="@string/wire_recipient_info_form_hint_wire_account_number"
+                    app:et_inputType="textVisiblePassword"
+                    app:et_max_length="@integer/wire_account_number_max_length" />
+
+                <com.firstrepublic.banking.features.wire.ui.custom.WireEditText
+                    android:id="@+id/et_wire_recipient_re_enter_account_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/wire_form_element_margin"
+                    app:et_hint="@string/wire_recipient_info_form_hint_re_account_number"
+                    app:et_imeOptions="actionDone"
+                    app:et_inputType="textVisiblePassword"
+                    app:et_max_length="@integer/wire_account_number_max_length" />
+
+                <com.firstrepublic.banking.features.wire.ui.custom.WireCardView
+                    android:id="@+id/cvAdditionalAddressInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/wire_horizontal_padding"
+                    android:layout_marginBottom="@dimen/wire_request_review_summary_vertical_padding"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvWireRecipientAddress"
+                    style="@style/WireTitle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/wire_horizontal_padding"
+                    android:layout_marginBottom="@dimen/wire_request_review_summary_vertical_padding"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:padding="@dimen/wire_request_review_summary_vertical_padding"
+                    android:text="@string/wire_label_recipient_address"
+                    android:textColor="@color/wire_additional_button_text" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_wire_recipient_info_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/wire_white"
+        android:elevation="@dimen/wire_elevation">
+
+        <Button
+            android:id="@+id/btn_wire_recipient_info_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/wire_bottom_button_margin"
+            android:text="@string/wire_recipient_info_form_continue_button_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

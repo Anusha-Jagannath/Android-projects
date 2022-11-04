@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">साझा वरीयता</string>
+    <string name="person_information">व्यक्ति की जानकारी</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="button">Button</string>
+</resources>

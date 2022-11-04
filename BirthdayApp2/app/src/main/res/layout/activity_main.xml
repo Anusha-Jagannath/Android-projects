@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/fContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="600dp"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/birthdayBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:backgroundTint="@color/light_blue"-->
+<!--        android:text="Fragment1" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/secondBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Fragment2"-->
+<!--       android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:backgroundTint="@color/light_blue"-->
+<!--        />-->
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/fContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="600dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/fButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="first"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/sButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="second"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        />-->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fContainer"
+        android:layout_width="match_parent"
+        android:layout_height="600dp" />
+
+    <Button
+        android:id="@+id/fButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="first button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <Button
+        android:id="@+id/sButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="second button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        />
+
+</RelativeLayout>
